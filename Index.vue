@@ -14,17 +14,14 @@
       </q-list>
     </div>
     <div class="q-pa-md">
-    <q-table
-      title="Table"
-      :data="data"
-      :columns="columns"
-      row-key="name"
-      hide-header
-      hide-bottom/>
-  </div>
-  <q-page-sticky position="bottom-right"  :offset="[45,178]">
-    <q-btn class="btn-add-right" round color="primary" icon="add"/>
-  </q-page-sticky>
+        <q-table
+        title="Table"
+        :data="data"
+        :columns="columns"
+        row-key="name"
+        hide-header
+        hide-bottom/>
+    </div>
   </q-page>
 </template>
 
@@ -91,5 +88,6 @@ export default {
       this.newTask = ''
     }
   }
+  
 }
 </script>
